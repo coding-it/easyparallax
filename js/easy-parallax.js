@@ -10,7 +10,10 @@ $(function()
     
     $.fn.startParallax = function(dataSpeed) 
     {
-        var dataSpeed = 2;
+        if(dataSpeed == null)
+        {
+            dataSpeed = 2;
+        }
         
         return $(this).each(function()
         {
@@ -18,6 +21,7 @@ $(function()
             
             $(window).scroll(function() 
             {
+                console.log(dataSpeed);
                 var yPos = -($(window).scrollTop() / dataSpeed);
                 var coords = '50%' + yPos + 'px';
                 parallaxObj.css({ backgroundPosition: coords });
