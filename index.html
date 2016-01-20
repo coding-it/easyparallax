@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <title>Easy Parallax</title>
+        <link rel="icon" href="img/favicon.png">
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">        
+        <link rel="stylesheet" href="css/easy-parallax.css">
+        <link rel="stylesheet" href="css/prettify.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+        <div class="ph-div">
+            <a href="https://github.com/coding-it/easyparallax.git">
+                <img style="position: absolute; top: 0; right: 0; border: 0; z-index: 9999;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+            </a>            
+            <div class="home-page">
+                <div id="easy-parallax">
+                    <h1>Easy Parallax</h1>
+                    <h2>The easiest parallax plugin that works perfectly.</h2>
+                    <a href="easy-parallax.zip" class="btn btn-lg btn-primary">Download</a>
+                    <div class="social">
+                        <p>Currently v0.1 &nbsp;  Author : <a href="http://codingit.com.br" target="_blank">Coding It</a></p>
+                        <p>Licensed under the MIT.</p>
+                        <!--<iframe src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px" class="btn-git"></iframe>-->
+                        <div class="fb-like" data-href="https://www.facebook.com/codingitbrasil" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://twitter.com/codingitbrasil" data-text="Checkout Easy Parallax" data-via="codingitbrasil">Tweet</a>
+                    </div>
+                </div>
+                <div class="jumbotron how-to">
+                    <div class="container">
+                        <h1>Setting <span>Up</span></h1>
+                        <p>Add this to your code. Remember: (css: header | scripts: end of the body)</p>
+                        <pre class="prettyprint linenums">
+&lt;link rel="stylesheet" href="path/to/easy-parallax.css"&gt;
+&lt;script type="text/javascript" src="path/to/easy-parallax.js"&gt;
+						</pre>
+                        <p>Easy Parallax will will work on "easy-parallax" div.</p>
+                        <pre class="prettyprint linenums">&lt;div id="easy-parallax"&gt;your content goes here&lt;/div&gt;
+						</pre>
+                        <p>Place this in your .js file.</p>
+                        <pre class="prettyprint linenums">$("div#easy-parallax section").startParallax(dataspeed); //it's 2 by default
+						</pre>
+                        <p>Change the path on easy-parallax.css</p>
+                        <pre class="prettyprint linenums">background: url("path/to/img") 50% 0 fixed;
+                        </pre>
+                    </div>
+                </div>
+            </div>        
+        
+            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/prettify.js"></script>            
+            <script src="js/easy-parallax.js"></script>
+            <script src="js/main.js"></script>
+            
+            <div id="fb-root"></div>
+            <script>
+                (function(d, s, id) 
+                {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=1599077670321469";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+                (document, 'script', 'facebook-jssdk'));
+            </script>
+            <script>
+                !function(d,s,id)
+                {
+                    var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                    if(!d.getElementById(id))
+                    {
+                        js=d.createElement(s);
+                        js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                        fjs.parentNode.insertBefore(js,fjs);
+                    }
+                }(document, 'script', 'twitter-wjs');
+            </script>
+
+		    <footer class="footer">
+		        <div class="container">
+		            <br/><p class="text-muted">Made by <a href="http://codingit.com.br" target="_blank">Coding it</a> &copy; 2015</p>
+                    <!--<div class="fb-page" data-href="https://www.facebook.com/codingitbrasil" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/codingitbrasil"><a href="https://www.facebook.com/codingitbrasil">Coding It</a></blockquote></div></div>-->
+		        </div>
+		    </footer>
+		</div>
+    </body>
+</html> 
