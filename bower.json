@@ -1,0 +1,22 @@
+{
+  "name": "easyparallax",
+  "homepage": "https://github.com/coding-it/easyparallax",
+  "description": "The easiest parallax plugin.",
+  "main": "easy-parallax/easy-parallax.js",
+  "moduleType": [],
+  "keywords": [
+    "easy",
+    "parallax"
+  ],
+  "authors": [
+    "Coding It"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
